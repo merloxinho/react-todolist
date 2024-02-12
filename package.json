@@ -1,6 +1,6 @@
 {
   "homepage": "http://merloxinho.github.io/react-todolist/",
-  "name": "todo-list",
+  "name": "react-todolist",
   "private": true,
   "version": "0.0.0",
   "type": "module",
