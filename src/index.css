@@ -1,0 +1,113 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  font-family: 'Work Sans', sans-serif;
+}
+body{
+  background-color: rgb(26, 26, 26);
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow-x: hidden;
+}
+.to-do-list{
+  width: 80vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 24px;
+  outline: 4px solid rgb(77, 77, 77);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.to-do-list h1{
+  color:rgb(175, 175, 175);
+  user-select: none;
+}
+.to-do-list input, .to-do-list button{
+  width: 80%;
+  height: 50px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  outline: 4px solid rgb(77, 77, 77);
+  border-radius: 10px;
+  color: rgb(77, 77, 77);
+  transition: .25s;
+}
+.to-do-list input::placeholder{
+  color: rgb(77, 77, 77);
+}
+.to-do-list input:focus{
+  color: rgb(175, 175, 175);
+  outline-color: rgb(60, 0, 255);
+  transition: .25s;
+}
+.input-field{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+.to-do-list button{
+  outline: none;
+  background-color: rgb(77, 77, 77);
+  color: rgb(175, 175, 175);
+  cursor: pointer;
+  transition: .25s;
+}
+.to-do-list button:hover{
+  background-color: rgb(60, 0, 255);
+  transition: .25s;
+}
+.to-do-list button:active{
+  background-color: rgb(175, 175, 175);
+  color: rgb(38, 0, 164);
+  transition: .1s;
+}
+.to-do-list .task-button{
+  width: 15%;
+  height: 25px;
+  font-size: 12px;
+}
+span{
+  font-size:18px;
+}
+.task-button{
+  margin: 10px;
+}
+.to-do-list ol{
+  width: 100%;
+}
+ol .task{
+  width: 100%;
+}
+ol li{
+  list-style-type: none;
+}
+.task{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.to-do-list hr{
+  width: 100%;
+  border: 2px solid rgb(77, 77, 77);
+  border-radius: 50px;
+}
+.buttons{
+  display: flex;
+}
+.buttons button{
+  padding: 10px;
+}
